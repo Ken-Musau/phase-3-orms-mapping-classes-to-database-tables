@@ -1,7 +1,11 @@
-#!/usr/bin/env ruby 
+#!/usr/bin/env ruby
 
-require 'pry'
-require_relative '../config/environment'
+require "pry"
+require_relative "../config/environment"
 
-binding.pry
+# binding.pry
 "pls"
+
+song = Song.create(name: "Hello", album: "25")
+
+puts song.name
